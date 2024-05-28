@@ -46,7 +46,7 @@ align-items: center;
    display: flex;
    align-items: center;
    justify-content: left; /* Center content if needed */
-   background-image: url(images/photo-1520583457224-aee11bad5112.avif); 
+   background-image: URL("background.jpg"); 
    background-repeat: no-repeat;
    background-size: cover; /* Ensure the image covers the entire area */
    background-position: center;
