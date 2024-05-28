@@ -46,7 +46,7 @@ align-items: center;
    display: flex;
    align-items: center;
    justify-content: left; /* Center content if needed */
-   background-image: URL("background.jpg"); 
+   background-image: url("background.jpg"); 
    background-repeat: no-repeat;
    background-size: cover; /* Ensure the image covers the entire area */
    background-position: center;
@@ -180,6 +180,7 @@ border-radius: 50%;
  .info{
    text-align: center;
  }
+
 .projects{
    background-color:black;
 }
@@ -198,6 +199,7 @@ border-radius: 50%;
  margin: 20px;
  transition: 0.7s ease;
  box-shadow:0 2px 25px  rgba(241, 236, 236, 0.459); 
+ min-width: 250px;
  
 }
 
