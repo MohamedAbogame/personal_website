@@ -7,26 +7,59 @@ padding: 0;
 box-sizing: border-box;
 scroll-behavior: smooth;
  }
- header{
-background-color: #f0f0f0;
-display: flex;
-justify-content: space-between;
-padding: 10px 200px;
-position: fixed;
-z-index: 999s;
-width: 100%;
-align-items: center;
-height: 67px;
-min-height: 70px;
- }
- .logo{
-    text-decoration: none;
-    color:crimson ;
-    text-transform:uppercase ;
-    font-weight: 700;
-    font-size: 1.4em;
-    transition: 0.7s;
- }  
+ header {
+   background-color: #f0f0f0;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 200px;
+   position: fixed;
+   z-index: 999;
+   width: 100%;
+   align-items: center;
+   height: 67px;
+   min-height: 70px;
+   box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.logo {
+   text-decoration: none;
+   color: crimson;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 1.4em;
+   transition: 0.7s;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+   header {
+       padding: 10px 150px;
+   }
+}
+
+@media (max-width: 992px) {
+   header {
+       padding: 10px 100px;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+       padding: 10px 50px;
+   }
+}
+
+@media (max-width: 576px) {
+   header {
+       padding: 10px 20px;
+       flex-direction: column;
+       height: auto;
+   }
+   .logo {
+       font-size: 1.2em;
+       margin-bottom: 10px;
+   }
+}
  .navigation a{
     text-decoration: none;
     color:crimson ;
