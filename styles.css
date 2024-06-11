@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #ecf0f1;
+}
+
+header {
+    background-color: #1c1c1c;
+    color: crimson;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: calc(100% - 40px); /* Assuming tablet screen width */
+    max-width: 800px; /* Max width for larger screens */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 15px;
+}
+
+.description h2 {
+    margin-top: 0;
+    color: crimson;
+}
+
+.description p {
+    color: #bdc3c7;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    color:crimson;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    margin: 10px;
+    display: inline-block;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
